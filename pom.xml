@@ -13,7 +13,33 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
-	<dependencies>
+
+	<repositories>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://193.95.57.13:8081/repository/maven-releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+
+
+
+<dependencies>
+		<!-- Dépendance du projet projet_local_achat -->
+		<dependency>
+			<groupId>com.esprit.examen</groupId>
+			<artifactId>tpAchatProject</artifactId>
+			<version>1.0.73</version> <!-- Remplacez par la version correcte -->
+		</dependency>
+
+		<!-- Autres dépendances existantes -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -24,7 +50,6 @@
 			<artifactId>httpclient</artifactId>
 			<version>4.1.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
@@ -37,8 +62,5 @@
 			<version>1.2.0</version>
 			<scope>test</scope>
 		</dependency>
-
-
 	</dependencies>
-
 </project>
