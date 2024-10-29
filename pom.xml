@@ -33,10 +33,11 @@
 
 <dependencies>
 		<!-- Dépendance du projet projet_local_achat -->
-		<dependency>
-			<groupId>com.esprit.examen</groupId>
-			<artifactId>tpAchatProject</artifactId>
-			<version>1.0.73</version> <!-- Remplacez par la version correcte -->
-		</dependency>
+<dependency>
+    <groupId>com.esprit.examen</groupId>
+    <artifactId>tpAchatProject</artifactId>
+    <version>1.0.0</version> <!-- Remplacez par la version correcte -->
+</dependency>
+
 	</dependencies>
 </project>
